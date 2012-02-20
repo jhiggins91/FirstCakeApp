@@ -49,6 +49,7 @@ CREATE TABLE jobdescriptions (
 id INT(10) NOT NULL AUTO_INCREMENT,
 job_title VARCHAR(128),
 employer_id INT(10) NOT NULL,
+statuscode_id INT(10),
 PRIMARY KEY(id));
 
 CREATE TABLE statuslists (

@@ -7,4 +7,11 @@ class Student extends AppModel {
        'className' => 'Course'
      )
    );
+    var $hasMany = array(
+        'Jobapplication' => array(
+            'className'     => 'Jobapplication',
+            'foreignKey'    => 'student_id',
+            'dependent'     => true
+        )    
+    );  
 }
